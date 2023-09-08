@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Hotel Website</title>
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <!-- swiper js cdn link -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+   <!-- custom css link -->
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+   <!-- header -->
+
+   <header class="header">
+
+      <a href="#" class="logo"><img src="images/로고.jpg" alt=""></a>
+
+      <nav class="navbar">
+         <a href="#home">home</a>
+         <a href="#about">about</a>
+         <a href="#room">room</a>
+         <a href="#gallery">gallery</a>
+         <a href="#review">review</a>
+         <a href="#fag">fag</a>
+         <a href="#reservation" class="btn"> Reserve</a>
+
+      </nav>
+      <div id="menu-btn" class="fas fa-bars"></div>
+   </header>
+
+   <!-- home -->
+
+   <section class="home" id="home">
+      <div class="swiper home-slider">
+         <div class="swiper-wrapper">
+            <div class="swiper-slide slide" style="background: url(images/메인2.jpg) no-repeat;">
+               <div class="content">
+                  <h3>OCEAN INFINITY POOL</h3>
+                  <a href="#" class="btn">ABOUT THE ANANTI</a>
+               </div>
+            </div>
+            <div class="swiper-slide slide" style="background: url(images/메인4.jpg) no-repeat;">
+               <div class="content">
+                  <h3>ANANTI TOWN</h3>
+                  <a href="#" class="btn">ABOUT THE ANANTI</a>
+               </div>
+            </div>
+            <div class="swiper-slide slide" style="background: url(images/레스토랑.jpg) no-repeat;">
+               <div class="content">
+                  <h3>ANANTI HILTON BUSAN</h3>
+                  <a href="#" class="btn">ABOUT THE ANANTI</a>
+               </div>
+            </div>
+            <div class="swiper-slide slide" style="background: url(images/메인9.jpg) no-repeat;">
+               <div class="content">
+                  <h3>ANANTI DESTINATION WEDDING</h3>
+                  <a href="#" class="btn">ABOUT THE ANANTI</a>
+               </div>
+            </div>
+         </div>
+
+         <div class="swiper-pagination"></div>
+
+         <div class="swiper-button-next"></div>
+         <div class="swiper-button-prev"></div>
+      </div>
+   </section>
+
+   <!-- ability -->
+
+   <section class="ability">
+
+      <form action="">
+
+
+         <div class="box">
+            <p>check in<span>*</span></p>
+            <input type="date" class="input">
+         </div>
+
+         <div class="box">
+            <p>check out<span>*</span></p>
+            <input type="date" class="input">
+         </div>
+
+         <div class="box">
+            <p>adults<span>*</span></p>
+            <select name="adults" class="input">
+               <option value="1">1 adults</option>
+               <option value="2">2 adults</option>
+               <option value="3">3 adults</option>
+               <option value="4">4 adults</option>
+               <option value="5">5 adults</option>
+               <option value="6">6 adults</option>
+            </select>
+         </div>
+
+         <div class="box">
+            <p>children<span>*</span></p>
+            <select name="child" class="input">
+               <option value="1">1 child</option>
+               <option value="2">2 child</option>
+               <option value="3">3 child</option>
+               <option value="4">4 child</option>
+               <option value="5">5 child</option>
+               <option value="6">6 child</option>
+            </select>
+         </div>
+
+         <div class="box">
+            <p>rooms type<span>*</span></p>
+            <select name="rooms" class="input">
+               <option value="1">DELUXE</option>
+               <option value="2">HALF BALCONY</option>
+               <option value="3">PREMIUM</option>
+               <option value="4">PREMIUM LIVING</option>
+               <option value="5">FAMILY EXECUTIVE</option>
+               <option value="6">EXECUTIVE</option>
+               <option value="7">OCEAN SUITE</option>
+               <option value="8">SEASIDE PRESIDENTIAL SUITE</option>
+            </select>
+         </div>
+
+
+         <input type="submit" value="ability" class="btn">
+      </form>
+   </section>
+
+   <!-- about -->
+
+   <section class="about" id="about">
+
+      <div class="row">
+
+         <div class="image">
+            <img src="images/힐튼.png" alt="">
+         </div>
+
+
+         <div class="content">
+            <h3>about us</h3>
+            <p>부산의 아름다운 해변을 품은 기장에 위치한 아난티 힐튼 부산에서 도심 속 완벽한 휴식처라는
+               차별화된 컨셉과 규모, 서비스를 자랑합니다.</p> 
+            <p> 탁 트인 오션뷰를 마음껏 감상 할 수 있는 약 21평의 넓고 여유로운 객실에는 프라이빗 발코니가
+               마련되어, 휴식을 즐기기에 더 없이 좋은 시설을 자랑합니다. </p>
+            <p>특히 해안경관이 파노라믹 뷰로 펼쳐지는 야외 인피니티 풀, 성인 전용 인피니티풀, 키즈 풀, 자쿠지 등 해외 리조트 못지 않은 럭셔리 수영장과 피트니스와 사우나, 테라피 룸 등의
+               부대시설들이 함께 마련되어 있어 사계절 내내 완벅한 휴식을 선사합니다.</p>
+         </div>
+
+      </div>
+
+   </section>
+
+    <!-- room -->
+
+    <section class="room" id="room">
+
+      <h1 class="heading">our room</h1>
+
+      <div class="swiper room-slider">
+
+         <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <span class="price">1일/박</span>
+                  <img src="images/디럭스.jpg" alt="">
+                  <a href="#" class="fas fa-shopping-cart"></a>
+               </div>
+               <div class="content">
+                  <h3>dELUXE</h3>
+                  <p> 아난티 힐튼 부산의 디럭스 객실은 2층, 3층에 위치한 여유로운 크기의 약 70제곱미터(발코니 포함)의 스탠다드 객실입니다. 오션뷰 또는 마운틴뷰 전망을 볼 수 있어 자연과의 일체감을 경험할 수 있습니다.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">RESERVE</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <span class="price">1일/박</span>
+                  <img src="images/프리미엄.jpg" alt="">
+                  <a href="#" class="fas fa-shopping-cart"></a>
+               </div>
+               <div class="content">
+                  <h3>HALF BALCONY</h3>
+                  <p>아난티 힐튼 부산의 디럭스 및 프리미엄 하프 발코니 객실은 약 70제곱미터 스탠다드 객실로 2층부터 9층에 위치합니다. 아늑한 객실에서는 편안한 휴식을 취하며 마운틴뷰 전망을 볼 수 있습니다.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">RESERVE</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <span class="price">1일/박</span>
+                  <img src="images/프리미엄룸.jpg" alt="">
+                  <a href="#" class="fas fa-shopping-cart"></a>
+               </div>
+               <div class="content">
+                  <h3>PREMIUM</h3>
+                  <p>프리미엄 객실은 약 70제곱미터(발코니 포함)의 객실로 4층에서 8층에 위치한 프리미엄 객실입니다. 높은 곳에서 파노라믹처럼 펼쳐지는 오션뷰 또는 아름다운 마운틴 뷰를 조망할 수 있습니다.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                  </div>
+                  <a href="#" class="btn">RESERVE</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <span class="price">1일/박</span>
+                  <img src="images/프리미엄2.jpg" alt="">
+                  <a href="#" class="fas fa-shopping-cart"></a>
+               </div>
+               <div class="content">
+                  <h3>PREMIUM LIVING</h3>
+                  <p>아난티 힐튼 부산의 프리미엄 리빙룸 객실은 여유로운 크기의 약 70m제곱미터(발코니 포함) 스탠다드 객실로 2층부터 7층에 위치합니다. 마운틴뷰 조망이 가능하며, 편안한 휴식을 취할 수 있습니다.
+                  </p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">RESERVE</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <span class="price">1일/박</span>
+                  <img src="images/패밀리 이그제큐티브.jpg" alt="">
+                  <a href="#" class="fas fa-shopping-cart"></a>
+               </div>
+               <div class="content">
+                  <h3>FAMILY EXECUTIVE</h3>
+                  <p>패밀리 이그제큐티브 오션뷰 객실은 가족의 편안한 경험을 위해 여유로운 크기의 약 70m제곱미터(발코니 포함) 객실로 3층부터 7층에 위치합니다. 바다를 보며 창의적인 디쉬와 커피를 즐길 수 있습니다.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                  </div>
+                  <a href="#" class="btn">RESERVE</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <span class="price">1일/박</span>
+                  <img src="images/이그제큐티브.jpg" alt="">
+                  <a href="#" class="fas fa-shopping-cart"></a>
+               </div>
+               <div class="content">
+                  <h3>EXECUTIVE</h3>
+                  <p>이그제큐티브 객실은 약 70제곱미터(발코니 포함)의 객실로 아난티 힐튼 객실 중 가장 높은 층에 위치해 가장 먼 바다까지 바라볼 수 있습니다. 이그제큐티브 전용 라운지와 호텔 사우나 이용이 가능합니다.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                  </div>
+                  <a href="#" class="btn">RESERVE</a>
+               </div>
+            </div>
+
+         </div>
+
+         <div class="swiper-pagination"></div>
+
+      </div>
+
+   </section>
+
+   <!-- services -->
+
+   <section class="services">
+
+      <div class="box-container">
+
+         <div class="box">
+            <img src="images/service1.png" alt="">
+            <h3>swimming pool</h3>
+         </div>
+
+         <div class="box">
+            <img src="images/service2.png" alt="">
+            <h3>food & drink</h3>
+         </div>
+
+         <div class="box">
+            <img src="images/service3.png" alt="">
+            <h3>restaurant</h3>
+         </div>
+
+         <div class="box">
+            <img src="images/service4.png" alt="">
+            <h3>fitness</h3>
+         </div>
+
+         <div class="box">
+            <img src="images/service5.png" alt="">
+            <h3>beauty spa</h3>
+         </div>
+
+         <div class="box">
+            <img src="images/service6.png" alt="">
+            <h3>resort beach</h3>
+         </div>
+
+      </div>
+
+   </section>
+
+   <!-- gallery -->
+
+      <section class="gallery" id="gallery">
+
+         <h1 class="heading">our gallery</h1>
+   
+         <div class="swiper gallery-slider">
+   
+            <div class="swiper-wrapper">
+   
+               <div class="swiper-slide slide">
+                  <img src="images/갤러리1.jpg" alt="">
+                  <div class="icon">
+                     <i class="fas fa-magnifying-glass-plus"></i>
+                  </div>
+               </div>
+   
+               <div class="swiper-slide slide">
+                  <img src="images/갤러리2.jpg" alt="">
+                  <div class="icon">
+                     <i class="fas fa-magnifying-glass-plus"></i>
+                  </div>
+               </div>
+   
+               <div class="swiper-slide slide">
+                  <img src="images/갤러리4.jpg" alt="">
+                  <div class="icon">
+                     <i class="fas fa-magnifying-glass-plus"></i>
+                  </div>
+               </div>
+   
+               <div class="swiper-slide slide">
+                  <img src="images/갤러리5.jpg" alt="">
+                  <div class="icon">
+                     <i class="fas fa-magnifying-glass-plus"></i>
+                  </div>
+               </div>
+   
+               <div class="swiper-slide slide">
+                  <img src="images/갤러리6.jpg" alt="">
+                  <div class="icon">
+                     <i class="fas fa-magnifying-glass-plus"></i>
+                  </div>
+               </div>
+   
+               <div class="swiper-slide slide">
+                  <img src="images/갤러리7.jpg" alt="">
+                  <div class="icon">
+                     <i class="fas fa-magnifying-glass-plus"></i>
+                  </div>
+               </div>
+   
+            </div>
+   
+         </div>
+   
+      </section>
+      
+   <!-- review -->
+
+   <section class="review" id="review">
+
+      <div class="swiper review-slider">
+         <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+               <h2 class="heading">client's review</h2>
+               <i class="fas fa-quote-right"></i>
+               <p>"호캉스를 즐기기에 최고인 듯 해요"</p>
+               <div class="user">
+                  <img src="images/인물.jpg" alt="">
+                  <div class="user-info">
+                     <h3>그룹 여행객</h3>
+                     <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <h2 class="heading">client's review</h2>
+               <i class="fas fa-quote-right"></i>
+               <p>"꼭 한 번 가볼 멋진 호텔이네요!"</p>
+               <div class="user">
+                  <img src="images/인물.jpg" alt="">
+                  <div class="user-info">
+                     <h3>나 홀로 여행객</h3>
+                     <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <h2 class="heading">client's review</h2>
+               <i class="fas fa-quote-right"></i>
+               <p>"만족과 행복이 가득했던 가족 여행"</p>
+               <div class="user">
+                  <img src="images/인물.jpg" alt="">
+                  <div class="user-info">
+                     <h3>유아/아동 동반 가족 여행객</h3>
+                     <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <h2 class="heading">client's review</h2>
+               <i class="fas fa-quote-right"></i>
+               <p>"내 인생 최고의 국내호텔"</p>
+               <div class="user">
+                  <img src="images/인물.jpg" alt="">
+                  <div class="user-info">
+                     <h3>커플/2인 여행객</h3>
+                     <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <h2 class="heading">client's review</h2>
+               <i class="fas fa-quote-right"></i>
+               <p>"말이 필요 없죠.. 매일 가고 싶은게 문제"</p>
+               <div class="user">
+                  <img src="images/인물.jpg" alt="">
+                  <div class="user-info">
+                     <h3>나 홀로 여행객</h3>
+                     <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <h2 class="heading">client's review</h2>
+               <i class="fas fa-quote-right"></i>
+               <p>"호캉스 최적의 호텔"</p>
+               <div class="user">
+                  <img src="images/인물.jpg" alt="">
+                  <div class="user-info">
+                     <h3>그룹 여행객</h3>
+                     <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+         <div class="swiper-pagination"></div>
+      </div>
+
+   </section>
+
+   <!-- faq -->
+
+      <section class="faqs" id="faq">
+
+         <h1 class="heading">frequently asked questions</h1>
+   
+         <div class="row">
+   
+            <div class="image">
+               <img src="images/FAQs.gif" alt="">
+            </div>
+   
+            <div class="content">
+   
+               <div class="box active">
+                  <h3>아난티 힐튼 부산의 체크인 및 체크아웃 시간은 언제인가요?</h3>
+                  <p>체크인은 03:00 PM부터입니다. 예약 시 얼리 체크인을 요청할 수 있으나 이용 가능 여부는 숙소 여건에 따라 결정됩니다. 지정된 시간 전에 체크인하는 경우 추가 요금이 발생할 수 있습니다. 이 호텔에서는 투숙객을 대상으로 체크인 전 및 체크아웃 후 여행 가방 보관 서비스를 제공합니다. 프런트 데스크는 24시간 상시 이용 가능합니다.</p>
+               </div>
+   
+               <div class="box">
+                  <h3>아난티 힐튼 부산에서는 조식을 제공하나요?</h3>
+                  <p>아난티 힐튼 부산에서 맛있는 뷔페식 조식을 즐겨보세요. 객실 요금에 조식이 포함되어 있지 않은 경우, 추가 요금은 성인 53000 KRW이며 아동은 28000 KRW입니다. 아고다에서 조식이 포함된 객실을 예약해 아침 식사 비용을 절약해보세요. 대개 호텔에서 조식을 현장 구매하실 경우보다 더 저렴합니다</p>
+               </div>
+   
+               <div class="box">
+                  <h3>아난티 힐튼 부산에서 비즈니스 이벤트를 개최할 수 있나요?</h3>
+                  <p>아난티 힐튼 부산은(는) 숙소 내 행사 공간과 편리한 행사 서비스를 제공하기에 기업 행사, 컨벤션 및 회의와(과) 같은 행사를 개최하는 데 최적의 선택입니다. 사용 가능한 모든 장소는 다양한 스타일과 크기로 제공되어 최대 90분을 모실 수 있습니다. 성공적인 비즈니스 행사나 회의를 위해 무료 Wi-Fi 및 시청각 기기을(를) 포함한 숙소의 다양한 편의 시설/서비스를 이용할 수 있습니다.</p>
+               </div>
+   
+               <div class="box">
+                  <h3>아난티 힐튼 부산 근처에는 어떤 레스토랑이 있나요?</h3>
+                  <p>숙소(아난티 힐튼 부산)가 위치한 기장군 지역에는 McQueen's Bar, da MOIM 및 Pungwonjang Sigol Bapsang 같은 인기 레스토랑이 있습니다</p>
+               </div>
+   
+               <div class="box">
+                  <h3>아난티 힐튼 부산 근처의 인기 명소는 어디인가요?</h3>
+                  <p>숙소(아난티 힐튼 부산)는 기장군 지역에 위치하며 해동 용궁사, 국립 해양 박물관 및 국립수산과학원 수산과학관 같은 명소로 유명합니다</p>
+               </div>
+   
+            </div>
+   
+         </div>
+   
+      </section>
+
+   <!-- reservation -->
+
+   <section class="reservation" id="reservation">
+
+      <h1 class="heading">book now</h1>
+
+      <form action="">
+
+         <div class="container">
+
+            <div class="box">
+               <p>name <span>*</span></p>
+               <input type="text" class="input" placeholder="Your Name">
+            </div>
+
+            <div class="box">
+               <p>email <span>*</span></p>
+               <input type="text" class="input" placeholder="Your Email">
+            </div>
+
+            <div class="box">
+               <p>check in <span>*</span></p>
+               <input type="date" class="input">
+            </div>
+
+            <div class="box">
+               <p>check out <span>*</span></p>
+               <input type="date" class="input">
+            </div>
+
+            <div class="box">
+               <p>adults <span>*</span></p>
+               <select name="adults" class="input">
+                  <option value="1">1 adults</option>
+                  <option value="2">2 adults</option>
+                  <option value="3">3 adults</option>
+                  <option value="4">4 adults</option>
+                  <option value="5">5 adults</option>
+                  <option value="6">6 adults</option>
+               </select>
+            </div>
+
+            <div class="box">
+               <p>children <span>*</span></p>
+               <select name="child" class="input">
+                  <option value="1">1 child</option>
+                  <option value="2">2 child</option>
+                  <option value="3">3 child</option>
+                  <option value="4">4 child</option>
+                  <option value="5">5 child</option>
+                  <option value="6">6 child</option>
+               </select>
+            </div>
+
+            <div class="box">
+               <p>rooms <span>*</span></p>
+               <select name="rooms" class="input">
+                  <option value="1">1 rooms</option>
+                  <option value="2">2 rooms</option>
+                  <option value="3">3 rooms</option>
+                  <option value="4">4 rooms</option>
+                  <option value="5">5 rooms</option>
+                  <option value="6">6 rooms</option>
+               </select>
+            </div>
+
+            <div class="box">
+               <p>room type <span>*</span></p>
+               <select name="type" class="input">
+                  <option value="1">DELUXE</option>
+                  <option value="2">HALF BALCONY</option>
+                  <option value="3">PREMIUM</option>
+                  <option value="4">PREMIUM LIVING</option>
+                  <option value="5">FAMILY EXECUTIVE</option>
+                  <option value="6">EXECUTIVE</option>
+                  <option value="7">OCEAN SUITE</option>
+                  <option value="8">SEASIDE PRESIDENTIAL SUITE</option>
+               </select>
+            </div>
+   
+         </div>
+
+         <input type="submit" value="check availability" class="btn">
+
+      </form>
+
+   </section>
+
+   <!-- footer -->
+
+   <section class="footer">
+
+      <div class="box-container">
+
+         <div class="box">
+            <h3>contact info</h3>
+            <a href="#"> <i class="fas fa-phone"></i> 아난티 호텔 커넥트 센터 (예약) 1877-5707</a>
+            <a href="#"> <i class="fas fa-phone"></i> 대표전화 : (0)51-509-1111 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> agrm.ahbusan@ananti.k</a>
+            <a href="#"> <i class="fas fa-map"></i> 부산광역시 기장군 기장읍 기장해안로 268-32 </a>
+         </div>
+
+         <div class="box">
+            <h3>quick links</h3>
+            <a href="#home"> <i class="fas fa-arrow-right"></i> home</a>
+            <a href="#about"> <i class="fas fa-arrow-right"></i> about</a>
+            <a href="#room"> <i class="fas fa-arrow-right"></i> rooms</a>
+            <a href="#gallery"> <i class="fas fa-arrow-right"></i> gallery</a>
+            <a href="#reservation"> <i class="fas fa-arrow-right"></i> reservation</a>
+         </div>
+
+         <!-- <div class="box">
+            <h3>extra links</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> refund policy</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> refund policy</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> refund policy</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> refund policy</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> refund policy</a>
+         </div> -->
+
+      </div>
+
+      <div class="share">
+         <a href="#" class="fab fa-facebook-f"></a>
+         <a href="#" class="fab fa-instagram"></a>
+         <a href="#" class="fab fa-twitter"></a>
+         <a href="#" class="fab fa-youtube"></a>
+      </div>
+
+      <div class="credit">&copy; copyright @ 2023 by <span>ryu ga young</span></div>
+
+   </section>
+   
+
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+   <script src="js/script.js"></script>
+
+</body>
+
+</html>

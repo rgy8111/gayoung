@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Nunito+Sans:wght@200;300;400;500;600&family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body{
+    width: 1200px;
+    margin: auto;
+}
+
+header{
+    height: 150px;
+}
+
+.title h1{
+    font-size: 3rem;
+    text-align: center;
+    line-height: 3;
+}
+
+.title span{
+    color: #ced6c9;
+}
+
+section{
+    height: auto;
+    width: 1200px;
+    overflow: hidden;
+}
+
+.concept img{
+    width: 100%;
+}
+
+.design{
+    margin-top: 25px;
+}
+.design h1{
+    font-size: 3rem;
+    text-align: center;
+    line-height: 3;
+}
+.design .web{
+    margin-left: 1rem;
+    width: 800px;
+    height: 500px;
+    float: left;
+    overflow: scroll;
+    border: solid 1px #4f709c;
+}
+.design .web h3{
+    font-size: 1.7rem;
+    text-align: center;
+}
+.design .web img{
+    width: 100%;
+}
+
+.design .mobile{
+    width: 350px;
+    height: 500px;
+    float: left;
+    overflow: scroll;
+    border: solid 1px #4f709c;
+    margin-left: 1rem;
+}
+.design .mobile h3{
+    font-size: 1.7rem;
+    text-align: center;
+}
+.design .mobile img{
+    width: 100%;
+    border-top: 1px solid #4f709c;
+}
+
+footer{
+    width: 1200px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+    padding-top: 30px;
+}
+
+footer .btn{
+    width: 6rem;
+    height: 3rem;
+    border-radius: 6px;
+    border: 2px solid #4f709c;
+    background-color: #fff;
+    color: #4f709c;
+    font-size: inherit;
+    line-height: normal;
+    cursor: pointer;
+}
+
+footer .btn a{
+    text-decoration: none;
+    color: inherit;
+    background-image: none;
+}
+
+.btn--stripe{
+    overflow: hidden;
+    position: relative;
+}
+
+.btn--stripe:after{
+    content: "";
+    display: block;
+    height: 7px;
+    width: 100%;
+    background-image: repeating-linear-gradient(45deg,#444,#444,1px,transparent 2px, transparent 5px);
+    border-top: 1px solid #444;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.btn--stripe:hover{
+    background-color: #00b3ff;
+    color: #fff;
+    border-color: #444;
+}
+
+
+@media(max-width:768px){
+    .project{
+        width: 758px;
+    }
+
+    .title{
+        width: 758px;
+    }
+
+    .title h1{
+        text-align: center;
+        padding-left: 1rem;
+    }
+
+    .image img{
+        width: 740px;
+    }
+
+    .concept{
+        width: 758px;
+        padding-top: 1rem;
+    }
+
+    .concept img{
+        width: 100%;
+    }
+
+    .design{
+        width: 758px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .design h1{
+        text-align: center;
+    }
+
+    .design .web{
+        width: 650px;
+        float: none;
+    }
+
+    .design .mobile{
+        width: 500px;
+        height: 350px;
+    }
+
+    footer{
+        width: 758px;
+    }
+}

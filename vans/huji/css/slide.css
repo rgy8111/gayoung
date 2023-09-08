@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --main-color: #4F709C;
+    --black: #F5EFE7;
+    --bg: #ffffff;
+    --ft: #505050;
+    --border: .1rem solid rgba(199, 199, 199, 0.3);
+}
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg);
+}
+
+header {
+    color: #787878;
+    background: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header .ri-home-heart-line {
+    position: absolute;
+    font-size: 30px;
+    margin-left: 250px;
+    color: #c8c8c8;
+    padding: 30px 0;
+}
+
+
+.header .logo img {
+    height: 3.5rem;
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    color: var(--ft);
+    font-size: 2rem;
+}
+
+.header .navbar a:hover {
+    color: var(--main-color);
+    border-bottom: .2rem dotted var(--black);
+    padding-bottom: .5rem;
+}
+
+.header .icons div {
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.header .icons div:hover {
+    color: var(--main-color);
+}
+
+#menu-btn {
+    display: none;
+}
+
+.header .search-form {
+    position: absolute;
+    top: 115%;
+    right: 7%;
+    background-color: #fff;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.header .search-form.active {
+    transform: scaleY(1);
+}
+
+.header .search-form input {
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.header .search-form label {
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color: #787878;
+    margin-right: 1.5rem;
+}
+
+.header .search-form label:hover {
+    color: var(--main-color);
+}
+
+/*  home starts  */
+section {
+    padding: 2rem 7%;
+}
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../images/main.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content {
+    max-width: 50rem;
+    width: 50rem;
+}
+
+.home .content h3 {
+    font-size: 8rem;
+    color: var(--ft);
+}
+
+.home .content p {
+    color: var(--ft);
+    font-size: 2.5rem;
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.btn:hover {
+    letter-spacing: .2rem;
+}
+
+/* world start */
+.heading {
+    text-align: center;
+    color: #111111;
+    text-transform: uppercase;
+    padding: 6.5rem 0;
+    font-size: 4rem;
+}
+
+.heading span {
+    color: #4F709C;
+}
+
+/* world start */
+.world .row {
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;
+}
+
+.world .image {
+    flex: 1 1 45rem;
+    display: flex;
+}
+
+.world .image img {
+    width: 50%;
+    height: 100%;
+}
+
+.world .row .content {
+    flex: 1 1 45rem;
+    padding-left: 7rem;
+    padding-top: 4rem;
+}
+
+.world .row .content h3{
+    font-size: 3.5rem;
+    color: var(--ft);
+    padding-bottom: 2rem;
+}
+
+.world .row .content h4{
+    font-size: 3rem;
+    color: var(--ft);
+    padding-bottom: 1rem;
+}
+
+/* world start */
+.world .row .content p{
+    font-size: 1.6rem;
+    color: #aaa;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+swiper-container{
+    width: 100%;
+    height: 50rem;
+    background: var(--black);
+}
+
+swiper-slider{
+    font-size: 18px;
+    color: var(--main-color);
+    box-sizing: border-box;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+/*  media queries / break point   */
+
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 1.5rem 2rem;
+    }
+}
+
+@media (max-width:768px) {
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background: var(--bg);
+        width: 16rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar a {
+        color: var(--ft);
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .header .navbar a:hover {
+        color: var(--main-color);
+    }
+
+    .header .navbar.active {
+        right: 0;
+    }
+   
+    .home {
+        background-position: center;
+        justify-content: center;
+    }
+
+    .home .content h3 {
+        font-size:4.5rem;
+    }
+
+    .home .content p {
+        font-size: 1.5rem;
+    }
+    
+    swiper-container{
+        width: 70rem;
+        height: 65rem;
+        background: var(--black);
+    }
+    
+    swiper-slider{
+        font-size: 14px;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        opacity: 0;
+    }
+
+
+    .world .image{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .world .image img{
+        width: 100%;
+        height: 40rem;
+    }
+    
+    .world .row .content{
+        padding-left: 3rem;
+        padding-top: 2rem;
+        height: 40rem;
+        margin-bottom: 2rem;
+    }
+    
+    .world .row .content h3{
+        font-size: 2.5rem;
+        color: var(--ft);
+        padding-bottom: 1rem;
+    }
+    
+    .world .row .content h4{
+        font-size: 2rem;
+        color: var(--ft);
+        padding-bottom: 0.5rem;
+    }
+    
+    .world .row .content p{
+        font-size: 1.3rem;
+        color: #aaa;
+        padding: 0.5rem 0;
+        line-height: 1.2;
+        display: none;
+    }
+
+    .world .row .btn{
+        padding-bottom: 0.8rem;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        display: none;
+    }
+
+}
+
+
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+
+    swiper-containar{
+        width: 65rem;
+    }
+    .world .image img{
+        width: 100%;
+        height: 30rem;
+    }
+
+    .world .row .content{
+        padding-left: 5rem;
+        padding-top: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .world .row .content h3{
+        font-size: 2rem;
+        padding-bottom: 0.5rem;
+    } 
+
+    .world .row .content p{
+        padding-bottom: 1rem;
+    }
+}
