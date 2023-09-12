@@ -63,7 +63,7 @@ section{
 .design .mobile{
     width: 350px;
     height: 500px;
-    float: left;
+    /* float: left; */
     overflow: scroll;
     border: solid 1px #4f709c;
     /* margin-left: 1rem; */
@@ -80,7 +80,7 @@ section{
 footer{
     width: 1200px;
     height: 150px;
-    /* display: flex; */
+    display: flex;
     justify-content: center;
     text-align: center;
     gap: 15px;
