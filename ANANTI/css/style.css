@@ -246,6 +246,9 @@ footer .btn a{
 } */
 
 @media (max-width: 440px) {
+    *{
+        margin: 0 auto;
+    }
 
     body{
         width: 100%;
