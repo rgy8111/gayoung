@@ -129,6 +129,10 @@ footer .btn a{
 
 
 @media(max-width:768px){
+    body{
+        width: 100%;
+    }
+
     .project{
         width: 758px;
     }
@@ -183,6 +187,10 @@ footer .btn a{
 }
 
 @media(max-width:460px){
+    body{
+        width: 100%;
+    }
+    
     .project{
         width: 460px;
     }
