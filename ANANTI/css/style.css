@@ -190,7 +190,7 @@ footer .btn a{
     body{
         width: 100%;
     }
-    
+
     .project{
         width: 460px;
     }
@@ -205,7 +205,7 @@ footer .btn a{
     }
 
     .image img{
-        width: 740px;
+        width: 440px;
     }
 
     .concept{
@@ -230,12 +230,12 @@ footer .btn a{
     }
 
     .design .web{
-        width: 650px;
+        width: 460px;
         float: none;
     }
 
     .design .mobile{
-        width: 500px;
+        width: 400px;
         height: 350px;
     }
 
